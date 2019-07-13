@@ -1,0 +1,79 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+* {
+  border: 0.5px solid rgba(255, 0, 0, 0) !important;
+}
+
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(BANNER.gif);
+  background-size: cover;
+  color: white;
+}
+
+.banner h1 {
+  margin: 352px auto 0 auto;
+  text-align: center;
+  font-size: 150px;
+}
+
+.banner ul {
+  width: 800px;
+  height: 77px;
+  margin: 60px auto 176px auto;
+  text-align: center;
+}
+
+.banner ul li {
+  display: inline-block;
+  margin: 0 45px;
+  font-size: 40px;
+}
+
+.content {
+  margin: 90px 370px 0 370px;
+}
+
+.content .productbox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  text-align: center;
+}
+
+.content .productbox h1 {
+  margin: 10px auto;
+  font-size: 50px;
+}
+
+.content .productbox p {
+  margin: 40px auto;
+  width: 379px;
+  height: 177px;
+}
+
+.content .about {
+  margin: 200px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  text-align: center;
+}
+
+.content .about h1 {
+  font-size: 50px;
+}
+
+.content .about p {
+  width: 386px;
+  height: 250px;
+  margin: 80px auto;
+}
+
+.content .footer {
+  margin: 80px auto 0 auto;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

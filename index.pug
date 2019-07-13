@@ -1,12 +1,40 @@
+mixin product(img,h1,p)
+    .product
+        img(src=img)
+        h1=h1
+        p=p
 <!DOCTYPE html>
 html(lang="zh")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        link(rel="stylesheet", href="style.css")
         title pizza
     body
-        div(class="box")
-        div(class="menu")
-        div(class="menu")
-        div(class="menu")
+        .banner
+            h1(data-aos="fade-down")  PIZZA
+            ul
+                li 連結
+                li 連結
+                li 連結
+        .content
+            .productbox
+                +product("PRODUCT-1.gif","Title","Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi necessitatibus, ipsam blanditiis quos ipsum explicabo doloribus totam velit id voluptatum modi praesentium qui? Voluptates, repellendus. Praesentium perferendis qui veniam.")
+                +product("PRODUCT-2.gif","Title","Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi necessitatibus, ipsam blanditiis quos ipsum explicabo doloribus totam velit id voluptatum modi praesentium qui? Voluptates, repellendus. Praesentium perferendis qui veniam.")
+                +product("PRODUCT-3.gif","Title","Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi necessitatibus, ipsam blanditiis quos ipsum explicabo doloribus totam velit id voluptatum modi praesentium qui? Voluptates, repellendus. Praesentium perferendis qui veniam.")
 
+            .about
+                .box
+                    img(src="PRODUCT--4.gif")
+                .box
+                    h1 Title
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi necessitatibus, ipsam blanditiis quos ipsum explicabo doloribus totam velit id voluptatum modi praesentium qui? Voluptates, repellendus. Praesentium perferendis qui veniam.
+            .footer
+                img(src="ICON.gif")
+                p xx-xxxxxxx
+                div &copy; pizza 2019
+        |<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        |<script>
+        |AOS.init();
+        |</script>
